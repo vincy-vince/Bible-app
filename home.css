@@ -1,11 +1,12 @@
 body{
-  background-image: url(1.webp);
+  /* background-image: url(1.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   margin:0%;
   padding: 0%;
 }
 .header-nav{
+  width:max-content;
   display:flex;
   justify-content: space-between;
   padding:30px;

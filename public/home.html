@@ -4,39 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bible App</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="home.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-  <header class="header-nav">
-   <div class="app-name">
-    Bible app
-  </div> 
-   <div>
-    <nav class="nav">
-      <li>Home</li>
-      <li>Old Testament</li>
-      <li>New Testament</li>
-    </nav>
-   </div>
+<body class="m-0 p-0 bg-orange-100">
+  <header class="flex sm:text-base justify-between p-3 bg-orange-200">
+    <div class="text-amber-700">
+      Bible app
+    </div>
+    <div>
+      <input class="p-1 text-sm border-2 border-amber-700 text-amber-700 rounded-3xl text-center " type="search" name="search" id="search" placeholder="search here!">      
+    </div>
+    <div class="text-sm text-amber-700">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>      
+    </div>
   </header>
-  <!-- <button id="myButton" onclick="generatejude()">JUDE chapter 1</button>
+
+  <section class="mx-16 my-12 bg-orange-200 h-96 p-8">
+    <div class="text-xl text-amber-900 text-center mt-4 pt-2 font-bold">
+      TODAY'S DAILY BEAD
+    </div>
+    <div class="mt-6 relative ">
+      <img class="h-32" src="brown-brushStroke.jpg" alt="">
+      <div class=" absolute top-5 ">
+        <p class="w-44 text-center font-bold text-amber-950 text-base">
+          The lord is my shepherd i shall not want.
+          <br>psalms 23:1
+        </p>
+      </div>
+    </div>
+
+    <button class="bg-slate-400">New Testament</button>
+    <button>Old Testament</button>
+  </section>
+  <!-- <button class="bg-emerald-300" id="myButton" onclick="generatejude()">JUDE chapter 1</button>
   <div class="verse-container">
 
   </div> -->
-
+<footer class=" relative ">
+  <div class="text-center fixed bottom-0 left-0 right-0 bg-orange-200 h-10 pt-2">
+    Home
+  </div>
+</footer>
 </body>
 <script>
   const verseContainer = document.querySelector('.verse-container');

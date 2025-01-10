@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "home.js",
   "scripts": {
-    "build":"postcss ./src/styles.css -o ./public/styles.css --watch",
-    "prod":"NODE_ENV=production postcss ./src/styles.css -o ./public/styles.css"
+    "build":"postcss ./src/styles.css -o ./client/styles.css --watch",
+    "prod":"NODE_ENV=production postcss ./src/styles.css -o ./client/styles.css"
   },
   "keywords": [],
   "author": "",

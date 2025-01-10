@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Books, chapters and verses</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-amber-800 ">
-<section>
- <!-- header -->
+  <section>
+    <!-- header -->
 
- <header class="flex justify-between sm:text-base px-5 py-3 bg-orange-200">
-  <div class="text-amber-950 text-xl font-bold italic ">
-   <a href="home.html">< Home</a>
-  </div>
-  <div>
-    <div class="text-amber-950 text-xl font-bold italic">
-      Bible app
+    <header class="flex justify-between sm:text-base px-5 py-3 bg-orange-200">
+      <div class="text-amber-950 text-xl font-bold italic ">
+        <a href="home.html">
+          < Home</a>
+      </div>
+      <div>
+        <div class="text-amber-950 text-xl font-bold italic">
+          Bible app
+        </div>
+      </div>
+    </header>
+
+    <!-- books,chapters,verses -->
+
+    <section class="border-y-4 bg-orange-100 border-amber-900">
+      <div class="flex justify-between text-center text-amber-900">
+        <div class="w-24 border-r-2 border-amber-900">
+          Books
+        </div>
+        <div class="w-20 ">
+          <a href="dup-chap.html">Chapters</a>
+        </div>
+        <div class="w-24 border-l-2 border-amber-900">
+          Verses
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- search -->
+
+  <!-- <section class="bg-orange-200 p-2 text-center">
+    <div>
+      <input class="text-sm mt-1 border-2 border-amber-700 text-amber-700 rounded-3xl text-center w-80 p-1"
+        type="search" name="search" id="search" placeholder="search here!">
     </div>
-  </div>
-</header>
+  </section> -->
 
-<!-- books,chapters,verses -->
-
-<section class="border-y-4 bg-orange-100 border-amber-900">
-  <div class="flex justify-between text-center text-amber-900">
-    <div class="w-24 border-r-2 border-amber-900">
-      Books
-    </div>
-    <div class="w-20 ">
-      Chapters
-    </div>
-    <div class="w-24 border-l-2 border-amber-900">
-      Verses
-    </div>
-  </div>
-</section>
-</section>
-
-<!-- search -->
-
-<section class="bg-orange-200 p-2 text-center">
-  <div>
-    <input class="text-sm mt-1 border-2 border-amber-700 text-amber-700 rounded-3xl text-center w-80 p-1" type="search" name="search" id="search" placeholder="search here!">      
-  </div>
-</section> 
-
-    <!-- books -->
-
+  <!-- books -->
+<!-- h-svh	
+h-lvh	
+h-dvh	
+h-min	
+h-max -->
   <section>
     <div class="text-center text-orange-100 text-2xl font-bold mt-2">
       Old Testament
     </div>
-    <div class="h-screen text-orange-100 flex justify-around p-2">
+    <div class="h-svh text-orange-100 flex justify-around p-2">
       <div>
         <ul>
           <li class="list-none border-b-2 border-orange-100"><a href="">📖 Genesis</a></li>
@@ -77,7 +85,7 @@
           <li class="list-none border-b-2 border-orange-100"><a href="">📖 Proverbs</a></li>
         </ul>
       </div>
-  
+
       <div>
         <ul>
           <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ecclesiastes</a></li>
@@ -102,15 +110,63 @@
         </ul>
       </div>
     </div>
-   
+
   </section>
-     
+
+<!-- New testament -->
+
+<section>
+  <div class="text-center text-orange-100 text-2xl font-bold mt-2">
+    New Testament
+  </div>
+  <div class="h-svh text-orange-100 flex justify-around p-2 pb-4">
+    <div>
+      <ul>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Mathew</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Mark</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Luke</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 John</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Acts</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Romans</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Corinthians</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Corinthians</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 </a>Galatians</li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ephesians</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Philippians</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Colossians</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Thessalonians</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Thessalonians</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Timothy</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Timothy</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Titus</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Philemon</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Hebrews</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 James</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <ul>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Peter</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Peter</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 I John</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 II John</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 III John</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Jude</a></li>
+        <li class="list-none border-b-2 border-orange-100"><a href="">📖 John</a></li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
   <!-- Footer -->
 
   <footer class=" relative ">
     <div class="text-center fixed bottom-0 left-0 right-0 bg-orange-200 h-10 pt-2 text-amber-950 text-sm font-bold">
       <p>&copy; 2024 The Holy Bible App</p>
     </div>
-  </footer> 
+  </footer>
 </body>
+
 </html>

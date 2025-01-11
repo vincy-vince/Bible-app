@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Books, chapters and verses</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="bibleMeta.js"></script>
 </head>
 
-<body class="bg-amber-800 ">
-  <section>
+<body class="bg-amber-800 scroll-smooth">
+  <section class="fixed top-0 right-0 left-0">
     <!-- header -->
 
-    <header class="flex justify-between sm:text-base px-5 py-3 bg-orange-200">
+    <header class="flex justify-between sm:text-base px-5 py-3 bg-orange-200 ">
       <div class="text-amber-950 text-xl font-bold italic ">
         <a href="home.html">
           < Home</a>
@@ -26,16 +27,16 @@
 
     <!-- books,chapters,verses -->
 
-    <section class="border-y-4 bg-orange-100 border-amber-900">
+    <section class="border-y-4 bg-orange-100 border-amber-900 ">
       <div class="flex justify-between text-center text-amber-900">
-        <div class="w-24 border-r-2 border-amber-900">
-          Books
+        <div id="selectedBooks" class="w-24 border-r-2 border-amber-900">
+          Genesis
         </div>
-        <div class="w-20 ">
-          <a href="dup-chap.html">Chapters</a>
+        <div id="chapters" class="w-20 ">
+          Chapters
         </div>
-        <div class="w-24 border-l-2 border-amber-900">
-          Verses
+        <div id="verses" class="w-24 border-l-2 border-amber-900">
+         <a href="dup-verse.html"> Verses</a>
         </div>
       </div>
     </section>
@@ -50,114 +51,110 @@
     </div>
   </section> -->
 
-  <!-- books -->
-<!-- h-svh	
-h-lvh	
-h-dvh	
-h-min	
-h-max -->
-  <section>
+<section id="book" >
+    <!-- books -->
+    <section class="mt-24">
+      <div class="text-center text-orange-100 text-2xl font-bold mt-2">
+        Old Testament
+      </div>
+      <div class="h-svh text-orange-100 flex justify-around p-2">
+        <div>
+          <ul>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Genesis</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Exodus</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Leviticus</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Numbers</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Deutronomy</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Joshua</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Judges</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ruth</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 1 Samuel</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 2 Samuel</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 1 Kings</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 2 Kings</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 1 Chronicles</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 2 Chronicles</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ezra</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Nehemiah</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Esther</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Job</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Psalms</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Proverbs</a></li>
+          </ul>
+        </div>
+  
+        <div>
+          <ul>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ecclesiastes</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Song of Solomon</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Isaiah</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Jeremiah</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Lamentations</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ezekiel</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Daniel</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Hosea</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Joel</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Amos</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Obadiah</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Jonah</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Micah</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Nahum</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Habakkuk</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Zephaniah</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Haggai</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Zechariah</a></li>
+            <li class="list-none border-b-2 border-orange-100"><a href="">📖 Malachi</a></li>
+          </ul>
+        </div>
+      </div>
+  
+    </section>
+  
+  <!-- New testament -->
+  <section id="new">
     <div class="text-center text-orange-100 text-2xl font-bold mt-2">
-      Old Testament
+      New Testament
     </div>
-    <div class="h-svh text-orange-100 flex justify-around p-2">
+    <div class="h-svh text-orange-100 flex justify-around p-2 pb-4">
       <div>
         <ul>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Genesis</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Exodus</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Leviticus</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Numbers</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Deutronomy</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Joshua</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Judges</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ruth</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 1 Samuel</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 2 Samuel</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 1 Kings</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 2 Kings</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 1 Chronicles</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 2 Chronicles</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ezra</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Nehemiah</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Esther</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Job</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Psalms</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Proverbs</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Mathew</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Mark</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Luke</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 John</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Acts</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Romans</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Corinthians</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Corinthians</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 </a>Galatians</li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ephesians</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Philippians</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Colossians</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Thessalonians</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Thessalonians</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Timothy</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Timothy</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Titus</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Philemon</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Hebrews</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 James</a></li>
         </ul>
       </div>
-
+  
       <div>
         <ul>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ecclesiastes</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Song of Solomon</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Isaiah</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Jeremiah</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Lamentations</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ezekiel</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Daniel</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Hosea</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Joel</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Amos</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Obadiah</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Jonah</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Micah</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Nahum</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Habakkuk</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Zephaniah</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Haggai</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Zechariah</a></li>
-          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Malachi</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Peter</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Peter</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 I John</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 II John</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 III John</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 Jude</a></li>
+          <li class="list-none border-b-2 border-orange-100"><a href="">📖 John</a></li>
         </ul>
       </div>
     </div>
-
+  
   </section>
-
-<!-- New testament -->
-
-<section>
-  <div class="text-center text-orange-100 text-2xl font-bold mt-2">
-    New Testament
-  </div>
-  <div class="h-svh text-orange-100 flex justify-around p-2 pb-4">
-    <div>
-      <ul>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Mathew</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Mark</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Luke</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 John</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Acts</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Romans</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Corinthians</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Corinthians</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 </a>Galatians</li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Ephesians</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Philippians</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Colossians</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Thessalonians</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Thessalonians</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Timothy</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Timothy</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Titus</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Philemon</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Hebrews</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 James</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <ul>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 I Peter</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 II Peter</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 I John</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 II John</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 III John</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 Jude</a></li>
-        <li class="list-none border-b-2 border-orange-100"><a href="">📖 John</a></li>
-      </ul>
-    </div>
-  </div>
-
 </section>
 
   <!-- Footer -->
@@ -168,5 +165,5 @@ h-max -->
     </div>
   </footer>
 </body>
-
+<script src="home.js"></script>
 </html>

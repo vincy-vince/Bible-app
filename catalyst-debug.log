@@ -1,0 +1,90 @@
+[debug] [2025-01-11T08:15:06.372Z] : 
+[debug] [2025-01-11T08:15:06.393Z] : ----------------------------------------------------------------------
+[debug] [2025-01-11T08:15:06.394Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\vinee_0z\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2025-01-11T08:15:06.394Z] : CLI Version:  1.17.6
+[debug] [2025-01-11T08:15:06.394Z] : Platform:     win32
+[debug] [2025-01-11T08:15:06.395Z] : Node Version: v20.17.0
+[debug] [2025-01-11T08:15:06.395Z] : Time:         Sat Jan 11 2025 13:45:06 GMT+0530 (India Standard Time)
+[debug] [2025-01-11T08:15:06.395Z] : ----------------------------------------------------------------------
+[debug] [2025-01-11T08:15:06.395Z] : 
+[debug] [2025-01-11T08:15:07.730Z] : > authorizing via signed-in user option
+[debug] [2025-01-11T08:15:07.731Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2025-01-11T08:15:07.753Z] : > refreshing access token <
+[debug] [2025-01-11T08:15:07.754Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2025-01-11T08:15:08.176Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 11 Jan 2025 08:15:05 GMT","content-type":"application/json;charset=UTF-8","content-length":"1948","connection":"keep-alive","set-cookie":["zalb_6e73717622=dea4bb29906843a6fbdf3bd5c0e43d1d; Path=/; Secure; HttpOnly","iamcsr=a771eebe-aa19-4aa8-bd7a-5e4dd3213750;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a771eebe-aa19-4aa8-bd7a-5e4dd3213750;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","content-security-policy":"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.zohocdn.com https://*.zoho.com https://*.zoho.eu https://*.zoho.com.cn https://*.zoho.com.au https://*.zoho.jp https://*.zoho.uk https://*.zoho.sa https://*.zohocloud.ca; report-uri https://logsapi.zoho.in/csplog?service=accounts;","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-11T08:15:08.200Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/11554000000023003 
+
+[debug] [2025-01-11T08:15:08.881Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 11 Jan 2025 08:15:06 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=ed010f63633be60a322039283f31a645; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=15de7a7c-b8ff-425c-9ab5-81d860f729a7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=15de7a7c-b8ff-425c-9ab5-81d860f729a7;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-11T08:15:08.884Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/11554000000023003/environment 
+
+[debug] [2025-01-11T08:15:08.956Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 11 Jan 2025 08:15:06 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=411f509465b028e7e235eac6930aaab2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=8f768a9f-da61-4323-9949-7cbbc26b9aab;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8f768a9f-da61-4323-9949-7cbbc26b9aab;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[debug] [2025-01-11T08:15:09.433Z] : No basic functions to add
+[info] [2025-01-11T08:15:09.588Z] : 
+[info] [2025-01-11T08:15:09.588Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2025-01-11T08:15:09.589Z] : i client[TheHolyBibleApp]: http://localhost:3000/app/
+[info] [2025-01-11T08:15:09.590Z] : 
+[info] [2025-01-11T08:27:21.827Z] : Change(s) is detected in home.html of the Web-Client.
+[info] [2025-01-11T08:28:11.302Z] : Change(s) is detected in home.html of the Web-Client.
+[info] [2025-01-11T08:28:19.190Z] : Change(s) is detected in home.html of the Web-Client.
+[info] [2025-01-11T08:28:45.866Z] : Change(s) is detected in home.html of the Web-Client.
+[info] [2025-01-11T08:29:31.666Z] : Change(s) is detected in home.html of the Web-Client.
+[info] [2025-01-11T08:30:56.940Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:31:26.424Z] : Change(s) is detected in home.html of the Web-Client.
+[info] [2025-01-11T08:32:45.679Z] : Change(s) is detected in home.html of the Web-Client.
+[info] [2025-01-11T08:33:42.423Z] : Change(s) is detected in home.html of the Web-Client.
+[info] [2025-01-11T08:34:06.776Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:34:24.598Z] : Change(s) is detected in dup-chap.html of the Web-Client.
+[info] [2025-01-11T08:34:32.315Z] : Change(s) is detected in dup-verse.html of the Web-Client.
+[info] [2025-01-11T08:36:00.822Z] : Change(s) is detected in dup-verse.html of the Web-Client.
+[info] [2025-01-11T08:36:15.407Z] : Change(s) is detected in dup-verse.html of the Web-Client.
+[info] [2025-01-11T08:36:22.447Z] : Change(s) is detected in dup-verse.html of the Web-Client.
+[info] [2025-01-11T08:37:27.192Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:37:31.199Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:37:42.125Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:38:23.081Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:40:25.642Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:41:10.911Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:42:57.596Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:44:54.190Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:45:03.402Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:46:04.036Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:46:12.165Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:46:30.674Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:46:38.256Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:47:59.964Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:48:15.363Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:48:45.486Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:50:37.239Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:52:45.262Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:52:56.237Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:53:22.033Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:54:29.531Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:55:56.535Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:56:31.875Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T08:57:04.283Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T09:01:33.556Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T09:08:54.163Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T09:15:50.730Z] : Change(s) is detected in navBar.html of the Web-Client.
+[debug] [2025-01-11T09:15:51.086Z] : > refreshing access token <
+[debug] [2025-01-11T09:15:51.091Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2025-01-11T09:15:51.405Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 11 Jan 2025 09:15:49 GMT","content-type":"application/json;charset=UTF-8","content-length":"1948","connection":"keep-alive","set-cookie":["zalb_6e73717622=cc36c6f8a6790832246efd66c032e512; Path=/; Secure; HttpOnly","iamcsr=7c49b281-c4eb-4655-bba7-e3ad450d152b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7c49b281-c4eb-4655-bba7-e3ad450d152b;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","content-security-policy":"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.zohocdn.com https://*.zoho.com https://*.zoho.eu https://*.zoho.com.cn https://*.zoho.com.au https://*.zoho.jp https://*.zoho.uk https://*.zoho.sa https://*.zohocloud.ca; report-uri https://logsapi.zoho.in/csplog?service=accounts;","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=64072000; includeSubDomains; preload"}
+
+[info] [2025-01-11T09:16:34.807Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T09:19:29.676Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T09:19:51.530Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T09:20:14.003Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T09:21:26.971Z] : Change(s) is detected in home.js of the Web-Client.
+[info] [2025-01-11T09:21:59.221Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T09:24:07.809Z] : Change(s) is detected in navBar.html of the Web-Client.
+[info] [2025-01-11T09:24:18.063Z] : Change(s) is detected in navBar.html of the Web-Client.

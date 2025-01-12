@@ -710,6 +710,18 @@ video {
 .bg-orange-200\/30 {
   background-color: rgb(254 215 170 / 0.3);
 }
+.bg-amber-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 211 77 / var(--tw-bg-opacity, 1));
+}
+.bg-amber-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity, 1));
+}
+.bg-amber-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(180 83 9 / var(--tw-bg-opacity, 1));
+}
 .bg-\[url\(istockphoto-610160620-612x612\.jpg\)\] {
   background-image: url(istockphoto-610160620-612x612.jpg);
 }

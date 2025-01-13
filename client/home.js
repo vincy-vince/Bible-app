@@ -10,9 +10,17 @@ chapters.addEventListener('click',(event)=>{
   book.innerHTML = ''
   let n=50;
   for(i=1; i<=n; i++){
-    book.innerText += `
-    <div class=" mt-16 bg-amber-600 border-none rounded-full text-orange-300 w-8 h-8"><a href="genesis1.html>full</a>${i}</div>
+    book.innerHTML += `
+    <div class="chap-inner-div"><a href="dup-verse.html">${i}</a></div>
     `
-    book.style.display = 'block'
+    book.style.display = 'grid'
+    book.style.fontSize = '18px'
+    book.style.color = '#FFDFC2'
+    book.style.marginTop = '100px'
+    book.style.grid = 'auto/ auto auto auto auto auto'
+    book.style.textAlign = 'center'
+    book.style.gap = '12px'
+    let chapInnerdiv = document.querySelector('.chap-inner-div');
+    chapInnerdiv.style.backgroundColor = 'orange'
   }
 })

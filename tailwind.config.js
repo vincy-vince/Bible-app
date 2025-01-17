@@ -3,7 +3,7 @@ module.exports = {
   content: ["./client/**/*.html"],
   theme: {
     extend: {
-      screens: { 'sm': { 'max': '640px' } },
+      screens: { 'sm': { 'max': '640' } },
     },
   },
   plugins: [],

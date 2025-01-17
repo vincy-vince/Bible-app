@@ -1,7 +1,7 @@
 .book-css{
   font-size: 18px;
   color: #ffdfc2;
-  margin-top:100px;
+  margin-top:110px;
   grid-template-columns: auto auto auto auto auto;
   text-align: center;
   gap: 12px;
@@ -9,6 +9,12 @@
 /*   book.classList.add("book-css") */
 .chap-css{
   background-color: orange;
+  border:none;
+  border-radius: 20px;
+  width:40px;
+  height:40px;
+  margin-left:auto;
+  margin-right:auto;
 }
 /* let chapInnerdiv = document.getElementById('chap-js');
     chapInnerdiv.classList.add("chap-css") */

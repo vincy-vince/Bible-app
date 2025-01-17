@@ -11,16 +11,11 @@ chapters.addEventListener('click',(event)=>{
   let n=50;
   for(i=1; i<=n; i++){
     book.innerHTML += `
-    <div class="chap-inner-div"><a href="dup-verse.html">${i}</a></div>
+    <div id="chap-js"><a href="dup-verse.html">${i}</a></div>
     `
     book.style.display = 'grid'
-    book.style.fontSize = '18px'
-    book.style.color = '#FFDFC2'
-    book.style.marginTop = '100px'
-    book.style.grid = 'auto/ auto auto auto auto auto'
-    book.style.textAlign = 'center'
-    book.style.gap = '12px'
-    let chapInnerdiv = document.querySelector('.chap-inner-div');
+    book.classList.add("book-css")
+    let chapInnerdiv = document.getElementById('chap-js');
     chapInnerdiv.style.backgroundColor = 'orange'
   }
 })

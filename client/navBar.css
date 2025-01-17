@@ -1,0 +1,14 @@
+.book-css{
+  font-size: 18px;
+  color: #ffdfc2;
+  margin-top:100px;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: center;
+  gap: 12px;
+}
+/*   book.classList.add("book-css") */
+.chap-css{
+  background-color: orange;
+}
+/* let chapInnerdiv = document.getElementById('chap-js');
+    chapInnerdiv.classList.add("chap-css") */

@@ -1,13 +1,20 @@
-fetch('https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/bibles.json')
-.then((response)=> console.log(response.json()))
-.then((data)=> console.log(data.id))
+fetch("https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/bibles.json")
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+    var version = [190,139,26,136,30,22]
+    version.forEach(i => {
+      console.log(i + ".) " + data[i].version + "     , ID => " + data[i].id);
+    }); 
+  });
+  fetch(
+    "https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-asv/books/psalms/chapters/23.json"
+  )
+    .then((response) => response.json())
+    .then((data) => console.log(data));
 
-// fetch(
-//   "https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-asv/books/genesis/chapters/1/verses/1.json"
-// )
-//   .then((response) => response.json())
-//   .then((data) => console.log(data.text));
-
+//https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-asv/books/psalms/chapters/23.json
+    //bibles/ta-IN-otcv/books/ஆதியாகமம்/chapters/1/verses
 let chapters = document.getElementById("chapters");
 let book = document.getElementById("book");
 chapters.addEventListener("click", (event) => {
@@ -25,8 +32,23 @@ chapters.addEventListener("click", (event) => {
     chapInnerdiv.style.backgroundColor = "orange";
 
     var list = document.getElementsByClassName("div-js");
-    for(var i=0;i<list.length;i++){
-    list[i].classList.add("chap-css");
+    for (var i = 0; i < list.length; i++) {
+      list[i].classList.add("chap-css");
     }
   }
 });
+
+//  english (kjv)                     ID => en-kjv
+//  Tamil - 2019[139]                 ID => ta-irvtam YES
+//  Malayalam Script                  ID => sa-Mlym-IN-laukika-sanml
+//  Hindi - 2019                      ID => hi-IN-irvhin
+//  Telugu Script                     ID => sa-Telu-IN-laukika-sante
+//  Kannada Script                    ID => sa-Knda-IN-laukika-sanka     
+
+// when we click the version the appropriate id should be inserted and the version changes.
+
+// we have to type the books in its respective languages. 
+
+// according to the number of verses and chapters we should generate the HTML/ the page should be updated.
+
+//

@@ -5,262 +5,262 @@ const meta = {
   },
   Exodus: {
     chapters: 40,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Leviticus: {
     chapters: 27,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Numbers: {
     chapters: 36,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Deuteronomy: {
     chapters: 34,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Joshua: {
     chapters: 24,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Judges: {
     chapters: 21,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Ruth: {
     chapters: 4,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   ISamuel: {
     chapters: 31,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IISamuel: {
     chapters: 24,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IKings: {
     chapters: 22,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IIKings: {
     chapters: 25,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IChronicles: {
     chapters: 29,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IIChronicles: {
     chapters: 36,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Ezra: {
     chapters: 10,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Nehemiah: {
     chapters: 13,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Esther: {
     chapters: 10,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Job: {
     chapters: 42,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Psalms: {
     chapters: 150,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Proverbs: {
     chapters: 31,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Ecclesiastes: {
     chapters: 12,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   songOfSolomon: {
     chapters: 8,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Isaiah: {
     chapters: 66,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Jeremiah: {
     chapters: 52,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Lamentations: {
     chapters: 5,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Ezekiel: {
     chapters: 48,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Daniel: {
     chapters: 12,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Hosea: {
     chapters: 14,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Joel: {
     chapters: 3,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Amos: {
     chapters: 9,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Obadiah: {
     chapters: 1,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Jonah: {
     chapters: 4,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Micah: {
     chapters: 7,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Nahum: {
     chapters: 3,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Habakkuk: {
     chapters: 3,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Zephaniah: {
     chapters: 3,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Haggai: {
     chapters: 2,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Zechariah: {
     chapters: 14,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Malachi: {
     chapters: 4,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Matthew: {
     chapters: 28,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Mark: {
     chapters: 16,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Luke: {
     chapters: 24,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   John: {
     chapters: 21,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Acts: {
     chapters: 28,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Romans: {
     chapters: 16,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IChorinthians: {
     chapters: 16,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IIChorinthians: {
     chapters: 13,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Galatians: {
     chapters: 6,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Ephesians: {
     chapters: 6,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Philippians: {
     chapters: 4,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Colossians: {
     chapters: 4,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IThesselonians: {
     chapters: 5,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IIThesselonians: {
     chapters: 3,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   ITimothy: {
     chapters: 6,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IITimothy: {
     chapters: 4,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Titus: {
     chapters: 3,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Phelemon: {
     chapters: 1,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Hebrews: {
     chapters: 13,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   James: {
     chapters: 5,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IPeter: {
     chapters: 5,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IIPeter: {
     chapters: 5,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IJohn: {
     chapters: 5,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IIJohn: {
     chapters: 1,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   IIIJohn: {
     chapters: 1,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Jude: {
     chapters: 1,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
   Revelation: {
     chapters: 22,
-    "en-kjv": "English(KJV)",
+    "en-kjv": "",
   },
 };

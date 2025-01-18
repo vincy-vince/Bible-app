@@ -3,21 +3,22 @@ fetch("https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/bibles.json")
   .then((data) => {
     console.log(data);
     // var version = [190, 139, 26, 136, 30, 22];
-    version.forEach((i) => {
-      console.log(190 + ".) " + data[190].version + "     , ID => " + data[190].id);
-    });
+    // version.forEach((i) => {
+    //   console.log(190 + ".) " + data[190].version + "     , ID => " + data[190].id);
+    // });
+      console.log(190 + ".) " + data[190].version + "     , ID => " + data[190].id)
   });
-// fetch(
-//   "https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-asv/books/psalms/chapters/23.json"
-// )
-//   .then((response) => response.json())
-//   .then((data) => console.log(data));
-
 fetch(
-  "https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/ml-omcv/books/ഉൽപ്പത്തി/chapters/1.json"
+  "https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/genesis/chapters/23.json"
 )
   .then((response) => response.json())
   .then((data) => console.log(data));
+
+// fetch(
+//   "https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/ml-omcv/books/ഉൽപ്പത്തി/chapters/1.json"
+// )
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
 
 //https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-asv/books/psalms/chapters/23.json
 //bibles/ta-IN-otcv/books/ஆதியாகமம்/chapters/1/verses
@@ -52,10 +53,6 @@ chapters.addEventListener("click", (event) => {
 //  Telugu Script                     ID => sa-Telu-IN-laukika-sante
 //  Kannada Script                    ID => sa-Knda-IN-laukika-sanka
 
-// when we click the version the appropriate id should be inserted and the version changes.
 
-// we have to type the books in its respective languages.
-
-// according to the number of verses and chapters we should generate the HTML/ the page should be updated.
-
-//
+// To Do
+// according to the number of verses and chapters we should generate the HTML / the page should be updated.

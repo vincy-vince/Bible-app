@@ -19,7 +19,7 @@
 
 //https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-asv/books/psalms/chapters/23.json
 //bibles/ta-IN-otcv/books/ஆதியாகமம்/chapters/1/verses
-let updatedBook = document.getElementById("selectedBooks");
+let updatedBook = document.getElementById("selectedBook");
 let bookArray = document.querySelectorAll(".onBookClicked");
 
 bookArray.forEach((onBookClicked) => {
@@ -30,8 +30,8 @@ bookArray.forEach((onBookClicked) => {
 
 function updateBook(bookName) {
   updatedBook.innerText = bookName;
-  console.log(meta[`${bookName}`].chapters);
-  chaptersUpdate(meta[`${bookName}`].chapters);
+  console.log(bookName, meta[`${bookName}`].chapters);
+  chaptersUpdate(bookName, meta[`${bookName}`].chapters);
 }
 
 let chapters = document.getElementById("chapters");
@@ -57,13 +57,13 @@ chapters.addEventListener("click", (event) => {
   }
 });
 
-function chaptersUpdate(chap) {
+function chaptersUpdate(bookname, chap) {
   book.style.display = "none";
   book.innerHTML = "";
   let n = chap;
   for (i = 1; i <= n; i++) {
     book.innerHTML += `
-    <div class="div-js" id="chap-js" ><a href="dup-verse.html">${i}</a></div>
+    <div class="div-js" id="chap-js" >${i}</a></div>
     `;
     book.style.display = "grid";
     book.classList.add("book-css");
@@ -75,13 +75,20 @@ function chaptersUpdate(chap) {
       list[i].classList.add("chap-css");
     }
   }
-}
+  let chapInnerdiv = document.getElementById("chap-js");
+  chapInnerdiv.addEventListener("click", () => {
+    fetch(
+      `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${chap}.json`
+    )
+      .then((response) => response.json()
+      )
+      .then((data) => console.log(data)
+      
+        // console.log(data)
 
-fetch(
-  "https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/genesis/chapters/23.json"
-)
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+      );
+  });
+}
 
 //bookArray[0].innerText
 //  english (kjv)                     ID => en-kjv
@@ -93,3 +100,4 @@ fetch(
 
 // To Do
 // according to the number of verses and chapters we should generate the HTML / the page should be updated.
+      //https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/john/chapters/3/verses/16.json

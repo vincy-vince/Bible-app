@@ -1,265 +1,265 @@
 const meta = {
-  Genesis: {
+  genesis: {
     chapters: 50,
     "en-kjv": "genesis",
   },
-  Exodus: {
+  exodus: {
     chapters: 40,
     "en-kjv": "",
   },
-  Leviticus: {
+  leviticus: {
     chapters: 27,
     "en-kjv": "",
   },
-  Numbers: {
+  numbers: {
     chapters: 36,
     "en-kjv": "",
   },
-  Deuteronomy: {
+  deuteronomy: {
     chapters: 34,
     "en-kjv": "",
   },
-  Joshua: {
+  joshua: {
     chapters: 24,
     "en-kjv": "",
   },
-  Judges: {
+  judges: {
     chapters: 21,
     "en-kjv": "",
   },
-  Ruth: {
+  ruth: {
     chapters: 4,
     "en-kjv": "",
   },
-  ISamuel: {
+  "1 samuel": {
     chapters: 31,
     "en-kjv": "",
   },
-  IISamuel: {
+  "2 samuel": {
     chapters: 24,
     "en-kjv": "",
   },
-  IKings: {
+  "1 kings": {
     chapters: 22,
     "en-kjv": "",
   },
-  IIKings: {
+  "2 kings": {
     chapters: 25,
     "en-kjv": "",
   },
-  IChronicles: {
+  "1 chronicles": {
     chapters: 29,
     "en-kjv": "",
   },
-  IIChronicles: {
+  "2 chronicles": {
     chapters: 36,
     "en-kjv": "",
   },
-  Ezra: {
+  ezra: {
     chapters: 10,
     "en-kjv": "",
   },
-  Nehemiah: {
+  nehemiah: {
     chapters: 13,
     "en-kjv": "",
   },
-  Esther: {
+  esther: {
     chapters: 10,
     "en-kjv": "",
   },
-  Job: {
+  job: {
     chapters: 42,
     "en-kjv": "",
   },
-  Psalms: {
+  psalms: {
     chapters: 150,
     "en-kjv": "",
   },
-  Proverbs: {
+  proverbs: {
     chapters: 31,
     "en-kjv": "",
   },
-  Ecclesiastes: {
+  ecclesiastes: {
     chapters: 12,
     "en-kjv": "",
   },
-  songOfSolomon: {
+  "song of solomon": {
     chapters: 8,
     "en-kjv": "",
   },
-  Isaiah: {
+  isaiah: {
     chapters: 66,
     "en-kjv": "",
   },
-  Jeremiah: {
+  jeremiah: {
     chapters: 52,
     "en-kjv": "",
   },
-  Lamentations: {
+  lamentations: {
     chapters: 5,
     "en-kjv": "",
   },
-  Ezekiel: {
+  ezekiel: {
     chapters: 48,
     "en-kjv": "",
   },
-  Daniel: {
+  daniel: {
     chapters: 12,
     "en-kjv": "",
   },
-  Hosea: {
+  hosea: {
     chapters: 14,
     "en-kjv": "",
   },
-  Joel: {
+  joel: {
     chapters: 3,
     "en-kjv": "",
   },
-  Amos: {
+  amos: {
     chapters: 9,
     "en-kjv": "",
   },
-  Obadiah: {
+  obadiah: {
     chapters: 1,
     "en-kjv": "",
   },
-  Jonah: {
+  jonah: {
     chapters: 4,
     "en-kjv": "",
   },
-  Micah: {
+  micah: {
     chapters: 7,
     "en-kjv": "",
   },
-  Nahum: {
+  nahum: {
     chapters: 3,
     "en-kjv": "",
   },
-  Habakkuk: {
+  habakkuk: {
     chapters: 3,
     "en-kjv": "",
   },
-  Zephaniah: {
+  zephaniah: {
     chapters: 3,
     "en-kjv": "",
   },
-  Haggai: {
+  haggai: {
     chapters: 2,
     "en-kjv": "",
   },
-  Zechariah: {
+  zechariah: {
     chapters: 14,
     "en-kjv": "",
   },
-  Malachi: {
+  malachi: {
     chapters: 4,
     "en-kjv": "",
   },
-  Matthew: {
+  matthew: {
     chapters: 28,
     "en-kjv": "",
   },
-  Mark: {
+  mark: {
     chapters: 16,
     "en-kjv": "",
   },
-  Luke: {
+  luke: {
     chapters: 24,
     "en-kjv": "",
   },
-  John: {
+  john: {
     chapters: 21,
     "en-kjv": "",
   },
-  Acts: {
+  acts: {
     chapters: 28,
     "en-kjv": "",
   },
-  Romans: {
+  romans: {
     chapters: 16,
     "en-kjv": "",
   },
-  IChorinthians: {
+  "1 corinthians": {
     chapters: 16,
     "en-kjv": "",
   },
-  IIChorinthians: {
+  "2 corinthians": {
     chapters: 13,
     "en-kjv": "",
   },
-  Galatians: {
+  galatians: {
     chapters: 6,
     "en-kjv": "",
   },
-  Ephesians: {
+  ephesians: {
     chapters: 6,
     "en-kjv": "",
   },
-  Philippians: {
+  philippians: {
     chapters: 4,
     "en-kjv": "",
   },
-  Colossians: {
+  colossians: {
     chapters: 4,
     "en-kjv": "",
   },
-  IThesselonians: {
+  "1 thessalonians": {
     chapters: 5,
     "en-kjv": "",
   },
-  IIThesselonians: {
+  "2 thessalonians": {
     chapters: 3,
     "en-kjv": "",
   },
-  ITimothy: {
+  "1 timothy": {
     chapters: 6,
     "en-kjv": "",
   },
-  IITimothy: {
+  "2 timothy": {
     chapters: 4,
     "en-kjv": "",
   },
-  Titus: {
+  titus: {
     chapters: 3,
     "en-kjv": "",
   },
-  Phelemon: {
+  philemon: {
     chapters: 1,
     "en-kjv": "",
   },
-  Hebrews: {
+  hebrews: {
     chapters: 13,
     "en-kjv": "",
   },
-  James: {
+  james: {
     chapters: 5,
     "en-kjv": "",
   },
-  IPeter: {
+  "1 peter": {
     chapters: 5,
     "en-kjv": "",
   },
-  IIPeter: {
+  "2 peter": {
     chapters: 5,
     "en-kjv": "",
   },
-  IJohn: {
+  "1 john": {
     chapters: 5,
     "en-kjv": "",
   },
-  IIJohn: {
+  "2 john": {
     chapters: 1,
     "en-kjv": "",
   },
-  IIIJohn: {
+  "3 john": {
     chapters: 1,
     "en-kjv": "",
   },
-  Jude: {
+  jude: {
     chapters: 1,
     "en-kjv": "",
   },
-  Revelation: {
+  revelation: {
     chapters: 22,
     "en-kjv": "",
   },

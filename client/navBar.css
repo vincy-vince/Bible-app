@@ -1,18 +1,23 @@
-.book-css{
+.book-css {
   font-size: 18px;
   color: #ffdfc2;
-  margin-top:110px;
+  margin-top: 110px;
   grid-template-columns: auto auto auto auto auto;
   text-align: center;
   gap: 12px;
 }
 /*   book.classList.add("book-css") */
-.chap-css{
+.chap-css {
   background-color: orange;
-  border:none;
+  border: none;
   border-radius: 20px;
-  width:40px;
-  height:40px;
-  margin-left:auto;
-  margin-right:auto;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
+/* 
+new-test-books
+
+old-test-books 
+*/

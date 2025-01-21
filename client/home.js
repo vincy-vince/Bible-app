@@ -59,7 +59,7 @@ function chaptersUpdate(bookname, chap) {
     book.style.display = "grid";
     book.classList.add("book-css");
     let chapInnerDiv = document.getElementById("chap-js");
-    chapInnerDiv.style.backgroundColor = "orange";
+  
 
     var list = document.getElementsByClassName("div-js");
     for (var i = 0; i < list.length; i++) {
@@ -78,7 +78,6 @@ function chaptersUpdate(bookname, chap) {
       book.style.display = "grid";
       book.classList.add("book-css");
       let chapInnerDiv = document.getElementById("chap-js");
-      chapInnerDiv.style.backgroundColor = "orange";
 
       var list = document.getElementsByClassName("div-js");
       for (var i = 0; i < list.length; i++) {

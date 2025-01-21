@@ -21,8 +21,17 @@
 
 //https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-asv/books/psalms/chapters/23.json
 //bibles/ta-IN-otcv/books/ஆதியாகமம்/chapters/1/verses
+
 let updatedBook = document.getElementById("selectedBook");
 let bookArray = document.querySelectorAll(".onBookClicked");
+
+updatedBook.addEventListener('click',() => {
+
+  book.innerHTML = "";
+  book.innerHTML = `
+
+  `
+})
 
 bookArray.forEach((onBookClicked) => {
   onBookClicked.addEventListener("click", (event) => {
@@ -38,25 +47,6 @@ function updateBook(bookName) {
 
 let chapters = document.getElementById("chapters");
 let book = document.getElementById("book");
-//   // if selectbook ? "" - > genis
-//   book.style.display = "none";
-//   book.innerHTML = "";
-//   let n = 2;
-//   for (i = 1; i <= n; i++) {
-//     book.innerHTML += `
-//     <div class="div-js" id="chap-js" ><a href="dup-verse.html">${i}</a></div>
-//     `;
-//     book.style.display = "grid";
-//     book.classList.add("book-css");
-//     let chapInnerDiv = document.getElementById("chap-js");
-//     chapInnerDiv.style.backgroundColor = "orange";
-
-//     var list = document.getElementsByClassName("div-js");
-//     for (var i = 0; i < list.length; i++) {
-//       list[i].classList.add("chap-css");
-//     }
-//   }
-// });
 
 function chaptersUpdate(bookname, chap) {
   book.style.display = "none";
@@ -133,12 +123,13 @@ function chaptersUpdate(bookname, chap) {
           book.innerHTML = ""
           let array = res.data;
           array.forEach(ele => {
-            let verse = ele.verse +" "+ele.text
+            let verse = ele.verse +". "+ele.text
             console.log(verse);
             book.innerHTML += `
-            <div class="verse-js">${verse}</div>
+            <div class="verse-js verse-css">${verse}</div>
             `
-            book.style.display = "inline-block";
+            book.style.display = "block";
+          let verseDiv = document.querySelectorAll('verse-js')
           })
         });
     });

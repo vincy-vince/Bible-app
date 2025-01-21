@@ -112,23 +112,30 @@ function chaptersUpdate(bookname, chap) {
   let chapInnerDiv = document.querySelectorAll(".div-js");
   chapInnerDiv.forEach((ele) => {
     ele.addEventListener("click", (event) => {
-      console.log(event);
+      console.log(event.currentTarget.innerText);
       fetch(
         `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${event.currentTarget.innerText}.json`
       )
         .then((res) => res.json())
         .then((res) => {
+          let totalVerse = [] 
           book.style.display = "none"
           book.innerHTML = ""
           let array = res.data;
           array.forEach(ele => {
+            
+            let verseNumber = ele.verse
+            totalVerse.push(verseNumber)
+            
+            let max = Math.max(...totalVerse);
+            console.log("max " + max);
             let verse = ele.verse +". "+ele.text
-            console.log(verse);
+          
             book.innerHTML += `
             <div class="verse-js verse-css">${verse}</div>
             `
             book.style.display = "block";
-          let verseDiv = document.querySelectorAll('verse-js')
+          
           })
         });
     });

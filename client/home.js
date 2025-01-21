@@ -11,6 +11,8 @@
 //     );
 //   });
 
+// const { data } = require("autoprefixer");
+
 // fetch(
 //   "https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/ml-omcv/books/ഉൽപ്പത്തി/chapters/1.json"
 // )
@@ -75,7 +77,6 @@ function chaptersUpdate(bookname, chap) {
     }
   }
 
-
   chapters.addEventListener("click", (event) => {
     book.style.display = "none";
     book.innerHTML = "";
@@ -88,25 +89,61 @@ function chaptersUpdate(bookname, chap) {
       book.classList.add("book-css");
       let chapInnerDiv = document.getElementById("chap-js");
       chapInnerDiv.style.backgroundColor = "orange";
-  
+
       var list = document.getElementsByClassName("div-js");
       for (var i = 0; i < list.length; i++) {
         list[i].classList.add("chap-css");
       }
     }
-
+    let chapInnerDiv = document.querySelectorAll(".div-js");
+    chapInnerDiv.forEach((ele) => {
+      ele.addEventListener("click", () => {
+        console.log("verse");
+        fetch(
+          `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${chap}.json`
+        )
+          .then((res) => res.json())
+          .then((res) => { book.style.display = "none"
+          book.innerHTML = ""
+            let array = res.data;
+            array.forEach(ele => {
+              let verse = ele.verse +" "+ele.text
+              console.log(verse);
+             
+              book.innerHTML += `
+              <div class="verse-js">${verse}</div>
+              `
+              book.style.display = "inline-block";
+            })
+          });
+      });
+    });
   });
 
   let chapInnerDiv = document.querySelectorAll(".div-js");
-  chapInnerDiv.forEach(ele =>{
-    ele.addEventListener("click",()=>{
-      console.log('verse');
-      fetch( `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${chap}.json`)
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-    })
-  })
+  chapInnerDiv.forEach((ele) => {
+    ele.addEventListener("click", () => {
+      console.log("verse");
+      fetch(
+        `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${chap}.json`
+      )
+        .then((res) => res.json())
+        .then((res) => {
+          book.style.display = "none"
+          book.innerHTML = ""
+          let array = res.data;
+          array.forEach(ele => {
+            let verse = ele.verse +" "+ele.text
+            console.log(verse);
+            book.innerHTML += `
+            <div class="verse-js">${verse}</div>
+            `
+            book.style.display = "inline-block";
+          })
+        });
+    });
+  });
 }
 
-      //bookArray[0].innerText
-      //https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/john/chapters/3/verses/16.json
+//bookArray[0].innerText
+//https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/john/chapters/3/verses/16.json

@@ -64,7 +64,7 @@ function chaptersUpdate(bookname, chap) {
   let n = chap;
   for (i = 1; i <= n; i++) {
     book.innerHTML += `
-    <div class="div-js" id="chap-js" >${i}</a></div>
+    <div class="div-js" id="chap-js" > ${i} </a></div>
     `;
     book.style.display = "grid";
     book.classList.add("book-css");
@@ -97,10 +97,10 @@ function chaptersUpdate(bookname, chap) {
     }
     let chapInnerDiv = document.querySelectorAll(".div-js");
     chapInnerDiv.forEach((ele) => {
-      ele.addEventListener("click", () => {
-        console.log("verse");
+      ele.addEventListener("click", (event) => {
+        console.log(event);
         fetch(
-          `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${chap}.json`
+          `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${event.currentTarget.innerText}.json`
         )
           .then((res) => res.json())
           .then((res) => { book.style.display = "none"
@@ -122,10 +122,10 @@ function chaptersUpdate(bookname, chap) {
 
   let chapInnerDiv = document.querySelectorAll(".div-js");
   chapInnerDiv.forEach((ele) => {
-    ele.addEventListener("click", () => {
-      console.log("verse");
+    ele.addEventListener("click", (event) => {
+      console.log(event);
       fetch(
-        `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${chap}.json`
+        `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${event.currentTarget.innerText}.json`
       )
         .then((res) => res.json())
         .then((res) => {
@@ -143,6 +143,7 @@ function chaptersUpdate(bookname, chap) {
         });
     });
   });
+
 }
 
 //bookArray[0].innerText

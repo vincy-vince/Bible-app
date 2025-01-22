@@ -7,20 +7,21 @@
   <title>Books, chapters and verses</title>
   <link rel="stylesheet" href="styles.css">
 <script src="bibleMeta.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="navBar.css">
 </head>
 
 <body class="bg-amber-800 scroll-smooth">
-  <section class="fixed top-0 right-0 left-0">
+  <section class="fixed top-0 right-0 left-0 ">
     <!-- header -->
 
     <header class="flex justify-between sm:text-base px-5 py-3 bg-orange-200 ">
-      <div class="text-amber-950 text-xl font-bold italic ">
+      <div class="text-amber-950 text-xl lg:text-3xl md:text-2xl font-bold italic ">
         <a href="home.html">
           < Home </a>
       </div>
       <div>
-        <div class="bg-orange-200 font-bold italic text-amber-950 text-lg">
+        <div class="bg-orange-200 font-bold italic text-amber-950 lg:text-3xl md:text-2xl text-lg">
           English(KJV)
         </div>
       </div>
@@ -29,12 +30,12 @@
     <!-- books,chapters,verses -->
 
     <section class="border-y-4 bg-orange-100 border-amber-900 ">
-      <div class="flex justify-around items-center text-center text-amber-900">
-        <div id="selectedBook" class="w-1/2">
+      <div class="flex justify-around items-center font-bold text-center text-red-900">
+        <div id="selectedBook" class="md:text-xl lg:text-2xl w-1/2">
           Books
         </div>
         
-        <div id="chapters" class="w-1/2">
+        <div id="chapters" class="md:text-xl lg:text-2xl w-1/2">
           Chapters
         </div>
       </div>
@@ -43,15 +44,15 @@
 
   <!-- books -->
 
-  <section id="book">
-    <section class="mt-24">
+  <section class="mb-6 md:mb-24" id="book">
+    <section class="mt-24 mb-7 md:mt-28 lg:mt-32">
 
-      <div class="text-center text-orange-100 text-2xl font-bold mt-2">
+      <div class="text-center text-orange-100 text-2xl lg:text-3xl font-bold mt-2">
         Old Testament
       </div>
       <div class="h-svh text-orange-100 flex justify-around p-2">
         <div>
-          <ul>
+          <ul class="md:text-xl lg:text-xl">
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="genesis">📖 Genesis</li>
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="exodus">📖 Exodus</li>
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="leviticus">📖 Leviticus</li>
@@ -76,7 +77,7 @@
         </div>
 
         <div>
-          <ul>
+          <ul class="md:text-xl lg:text-xl">
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="ecclesiastes">📖 Ecclesiastes</li>
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="song of solomon">📖 Song of Solomon</li>
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="isaiah">📖 Isaiah</li>
@@ -103,13 +104,13 @@
     </section>
 
     <!-- New testament -->
-    <section id="new">
-      <div class="text-center text-orange-100 text-2xl font-bold mt-2">
+    <section class="md:mt-20" id="new">
+      <div class="text-center text-orange-100 text-2xl lg:text-3xl font-bold mt-2">
         New Testament
       </div>
       <div class="h-svh text-orange-100 flex justify-around p-2 pb-4">
         <div>
-          <ul class="new-test-books">
+          <ul class="md:text-xl lg:text-xl new-test-books">
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="matthew">📖 Matthew</li>
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="mark">📖 Mark</li>
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="luke">📖 Luke</li>
@@ -134,7 +135,7 @@
         </div>
 
         <div>
-          <ul class="new-test-books">
+          <ul class="md:text-xl lg:text-xl new-test-books">
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="1 peter">📖 1 Peter</li>
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="2 peter">📖 2 Peter</li>
             <li class="onBookClicked list-none border-b-2 border-orange-100"  data-bookName="1 john">📖 1 John</li>
@@ -152,7 +153,7 @@
   <!-- Footer -->
 
   <footer class=" relative ">
-    <div class="text-center fixed bottom-0 left-0 right-0 bg-orange-200 h-10 pt-2 text-amber-950 text-sm font-bold">
+    <div class="text-center fixed bottom-0 left-0 right-0 bg-orange-200 h-10 pt-2 text-amber-950 md:text-xl text-sm font-bold">
       <p>&copy; 2024 The Holy Bible App</p>
     </div>
   </footer>

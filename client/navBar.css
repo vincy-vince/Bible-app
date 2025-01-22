@@ -22,12 +22,13 @@
 
 .verse-css{
   background-color: #fed4ad;
+  text-align: justify;
   border: none;
   width: auto;
   height: auto;
   margin-right: 20px;
   margin-left: 20px;
-  padding: 6px;
+  padding: 10px;
   color:rgb(137, 34, 34);
   font-weight:bold;
 }

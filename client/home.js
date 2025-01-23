@@ -1,27 +1,3 @@
-// fetch("https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/bibles.json")
-//   .then((res) => res.json())
-//   .then((data) => {
-//     console.log(data);
-//     // var version = [190, 139, 26, 136, 30, 22];
-//     // version.forEach((i) => {
-//     //   console.log(190 + ".) " + data[190].version + "     , ID => " + data[190].id);
-//     // });
-//     console.log(
-//       190 + ".) " + data[190].version + "     , ID => " + data[190].id
-//     );
-//   });
-
-// const { data } = require("autoprefixer");
-
-// fetch(
-//   "https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/ml-omcv/books/ഉൽപ്പത്തി/chapters/1.json"
-// )
-//   .then((response) => response.json())
-//   .then((data) => console.log(data));
-
-//https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-asv/books/psalms/chapters/23.json
-//bibles/ta-IN-otcv/books/ஆதியாகமம்/chapters/1/verses
-
 let updatedBook = document.getElementById("selectedBook");
 let bookArray = document.querySelectorAll(".onBookClicked");
 
@@ -30,7 +6,7 @@ updatedBook.addEventListener('click',() => {
   book.style.display = "none"
   book.style.display = "block"
   book.innerHTML = `
-  <section class="mb-6 md:mb-24" id="book">
+  <section class="head-Section md:mb-24" id="book">
     <section class="mt-24 mb-7 md:mt-28 lg:mt-32">
 
       <div class="text-center text-orange-100 text-2xl lg:text-3xl font-bold mt-2">

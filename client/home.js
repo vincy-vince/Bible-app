@@ -197,31 +197,32 @@ function chaptersUpdate(bookname, chap) {
           `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${event.currentTarget.innerText}.json`
         )
           .then((res) => res.json())
-          .then((res) => { book.style.display = "none"
-          let totalVerse = [] 
+          .then((res) => { 
+          let verseArray = res.data
+  
+          const resultVerse = verseArray.reduce((finalVerse,currentVerse) => {
+            let obj = finalVerse.find((item)=>item.verse === currentVerse.verse)
+              if(obj){
+                return finalVerse
+              }else{
+                return finalVerse.concat([currentVerse])
+              }
+          },[])
+
+          console.log(resultVerse);
+         
+          book.style.display = "none"
           book.innerHTML = ""
-            let array = res.data;
-            array.forEach(ele => {
-              let verseNumber = ele.verse
-            totalVerse.push(verseNumber)
-
-            let max = Math.max(...totalVerse);
-
-              let verse = verseNumber +" "+ele.text
-              if(verseNumber < max ){
-                book.innerHTML += `
-                <div class="verse-js verse-css">${verse}</div>
-                `,
-                book.style.display = "block"
-              }
-              else{
-                return
-              }
-              book.innerHTML += `
-              <div class="verse-js verse-css">${verse}</div>
-              `
-              book.style.display = "inline-block";
-            })
+          
+            for(r=0; r < resultVerse.length; r++){
+            let finVerse = resultVerse[r].verse + ". "+ resultVerse[r].text
+            book.innerHTML += `
+            <div class="verse-js verse-css">${finVerse}</div>
+            `,
+            book.style.display = "block"
+            }
+         
+           
           });
       });
     });
@@ -236,30 +237,31 @@ function chaptersUpdate(bookname, chap) {
       )
         .then((res) => res.json())
         .then((res) => {
-          let totalVerse = [] 
+          
+          let verseArray = res.data
+          const resultVerse = verseArray.reduce((finalVerse,currentVerse) => {
+            let obj = finalVerse.find((item)=>item.verse === currentVerse.verse)
+              if(obj){
+                return finalVerse
+              }else{
+                return finalVerse.concat([currentVerse])
+              }
+          },[])
+
+          console.log(resultVerse);
+         
           book.style.display = "none"
           book.innerHTML = ""
-          let array = res.data;
-          array.forEach(ele => {
-            
-            let verseNumber = ele.verse
-            totalVerse.push(verseNumber)
-            
-            let max = Math.max(...totalVerse);
-
-            console.log("max " + max);
-            
-          if(verseNumber < max ){
-            let verse = verseNumber +". "+ele.text
+          
+            for(r=0; r < resultVerse.length; r++){
+            let finVerse = resultVerse[r].verse + ". "+ resultVerse[r].text
             book.innerHTML += `
-            <div class="verse-js verse-css">${verse}</div>
+            <div class="verse-js verse-css">${finVerse}</div>
             `,
             book.style.display = "block"
-          }
-          else{
-            return
-          }
-          })
+            }
+
+          
         });
     });
   });

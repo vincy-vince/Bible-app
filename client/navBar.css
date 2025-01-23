@@ -1,13 +1,122 @@
-.book-css {
-  font-size: 18px;
-  color: #ffdfc2;
-  margin-top: 110px;
-  grid-template-columns: auto auto auto auto auto;
-  text-align: center;
-  gap: 12px;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(107, 24, 24);
+  scroll-behavior: smooth;
   margin-bottom:60px;
 }
+/* .book-css {
+  font-size: 18px;
+  color: #ffdfc2; 
+  margin-top: 100px;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 12px;
+  margin-bottom: 60px;
+} */
 /*   book.classList.add("book-css") */
+
+.header-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #fcd4ae;
+}
+
+.header-div {
+  color: rgb(163, 41, 41);
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header a {
+  text-decoration: none;
+  color: rgb(163, 41, 41);
+}
+
+.footer {
+  position: relative;
+}
+
+.footer-div {
+  background-color: #fcd4ae;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  padding-top: 3px;
+  color: rgb(163, 41, 41);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bc-section{
+  border-top: 3px solid rgb(172, 76, 76);
+  border-bottom: 3px solid rgb(172, 76, 76);
+background-color: #fcd4ae;
+}
+
+.bc-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight:bold;
+  text-align: center;
+  color:rgb(163, 41, 41);
+}
+
+.book-head-section {
+  margin-bottom: 24px;
+}
+
+.book-subSection{
+  margin-top: 100px;
+  margin-bottom:24px;
+}
+
+.testaments{
+  background-image: linear-gradient(to right, rgb(107, 24, 24) , #fcd4ae,rgb(107, 24, 24));
+  text-align:center;
+  color:rgb(107, 24, 24);
+  font-size:24px;
+  font-weight:bold;
+  margin-top:8px;
+}
+
+.bookName-div,
+.bookName-div2{
+height:auto;
+color:#ffdfc2;
+display: flex;
+justify-content: space-around;
+padding:4px;
+}
+
+.bookName-div2{
+margin-bottom: 60px;
+}
+
+.old-books ul,
+.new-books ul{
+  padding:0;
+}
+
+.old-books li,
+.new-books li{
+list-style-type: none;
+border-bottom: 2px solid #fed4ad;
+line-height: 25px;
+}
+/* --------------------------------- */
 .chap-css {
   background-color: #fed4ad;
   border: none;
@@ -16,11 +125,11 @@
   height: 40px;
   margin-left: auto;
   margin-right: auto;
-  color:rgb(137, 34, 34);
+  color: rgb(137, 34, 34);
   font-weight: bold;
 }
 
-.verse-css{
+.verse-css {
   background-color: #fed4ad;
   text-align: justify;
   border: none;
@@ -29,11 +138,6 @@
   margin-right: 20px;
   margin-left: 20px;
   padding: 10px;
-  color:rgb(137, 34, 34);
-  font-weight:bold;
+  color: rgb(137, 34, 34);
+  font-weight: bold;
 }
-/* 
-new-test-books
-
-old-test-books 
-*/

@@ -5,14 +5,15 @@ body {
   scroll-behavior: smooth;
   margin-bottom:60px;
 }
-/* .book-css {
+.book-css {
   font-size: 18px;
   color: #ffdfc2; 
   margin-top: 100px;
   grid-template-columns: auto auto auto auto auto;
   gap: 12px;
   margin-bottom: 60px;
-} */
+
+}
 /*   book.classList.add("book-css") */
 
 .header-section {
@@ -127,6 +128,7 @@ line-height: 25px;
   margin-right: auto;
   color: rgb(137, 34, 34);
   font-weight: bold;
+  text-align: center;
 }
 
 .verse-css {

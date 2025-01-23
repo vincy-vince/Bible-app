@@ -14,56 +14,56 @@ updatedBook.addEventListener("click", () => {
       <div class="bookName-div">
        <div class="old-books">
           <ul class="md:text-xl lg:text-xl">
-            <li class="onBookClicked" data-bookName="genesis">📖 Genesis</li>
-            <li class="onBookClicked" data-bookName="exodus">📖 Exodus</li>
-            <li class="onBookClicked" data-bookName="leviticus">📖 Leviticus</li>
-            <li class="onBookClicked" data-bookName="numbers">📖 Numbers</li>
-            <li class="onBookClicked" data-bookName="deuteronomy">📖 Deuteronomy
+            <li class="bookClicked" data-bookName="genesis">📖 Genesis</li>
+            <li class="bookClicked" data-bookName="exodus">📖 Exodus</li>
+            <li class="bookClicked" data-bookName="leviticus">📖 Leviticus</li>
+            <li class="bookClicked" data-bookName="numbers">📖 Numbers</li>
+            <li class="bookClicked" data-bookName="deuteronomy">📖 Deuteronomy
             </li>
-            <li class="onBookClicked" data-bookName="joshua">📖 Joshua</li>
-            <li class="onBookClicked" data-bookName="judges">📖 Judges</li>
-            <li class="onBookClicked" data-bookName="ruth">📖 Ruth</li>
-            <li class="onBookClicked" data-bookName="1 samuel">📖 1 Samuel</li>
-            <li class="onBookClicked" data-bookName="2 samuel">📖 2 Samuel</li>
-            <li class="onBookClicked" data-bookName="1 kings">📖 1 Kings</li>
-            <li class="onBookClicked" data-bookName="2 kings">📖 2 Kings</li>
-            <li class="onBookClicked" data-bookName="1 chronicles">📖 1
+            <li class="bookClicked" data-bookName="joshua">📖 Joshua</li>
+            <li class="bookClicked" data-bookName="judges">📖 Judges</li>
+            <li class="bookClicked" data-bookName="ruth">📖 Ruth</li>
+            <li class="bookClicked" data-bookName="1 samuel">📖 1 Samuel</li>
+            <li class="bookClicked" data-bookName="2 samuel">📖 2 Samuel</li>
+            <li class="bookClicked" data-bookName="1 kings">📖 1 Kings</li>
+            <li class="bookClicked" data-bookName="2 kings">📖 2 Kings</li>
+            <li class="bookClicked" data-bookName="1 chronicles">📖 1
               Chronicles</li>
-            <li class="onBookClicked" data-bookName="2 chronicles">📖 2
+            <li class="bookClicked" data-bookName="2 chronicles">📖 2
               Chronicles</li>
-            <li class="onBookClicked" data-bookName="ezra">📖 Ezra</li>
-            <li class="onBookClicked" data-bookName="nehemiah">📖 Nehemiah</li>
-            <li class="onBookClicked" data-bookName="esther">📖 Esther</li>
-            <li class="onBookClicked" data-bookName="job">📖 Job</li>
-            <li class="onBookClicked" data-bookName="psalms">📖 Psalms</li>
-            <li class="onBookClicked" data-bookName="proverbs">📖 Proverbs</li>
+            <li class="bookClicked" data-bookName="ezra">📖 Ezra</li>
+            <li class="bookClicked" data-bookName="nehemiah">📖 Nehemiah</li>
+            <li class="bookClicked" data-bookName="esther">📖 Esther</li>
+            <li class="bookClicked" data-bookName="job">📖 Job</li>
+            <li class="bookClicked" data-bookName="psalms">📖 Psalms</li>
+            <li class="bookClicked" data-bookName="proverbs">📖 Proverbs</li>
           </ul>
         </div>
 
         <div class="old-books">
           <ul class="md:text-xl lg:text-xl">
-            <li class="onBookClicked" data-bookName="ecclesiastes">📖
+            <li class="bookClicked" data-bookName="ecclesiastes">📖
               Ecclesiastes</li>
-            <li class="onBookClicked" data-bookName="song of solomon">📖 Song of
+            <li class="bookClicked" data-bookName="song of solomon">📖 Song of
               Solomon</li>
-            <li class="onBookClicked" data-bookName="isaiah">📖 Isaiah</li>
-            <li class="onBookClicked" data-bookName="jeremiah">📖 Jeremiah</li>
-            <li class="onBookClicked" data-bookName="lamentations">📖
+            <li class="bookClicked" data-bookName="isaiah">📖 Isaiah</li>
+            <li class="bookClicked" data-bookName="jeremiah">📖 Jeremiah</li>
+            <li class="bookClicked" data-bookName="lamentations">📖
               Lamentations</li>
-            <li class="onBookClicked" data-bookName="ezekiel">📖 Ezekiel</li>
-            <li class="onBookClicked" data-bookName="daniel">📖 Daniel</li>
-            <li class="onBookClicked" data-bookName="hosea">📖 Hosea</li>
-            <li class="onBookClicked" data-bookName="joel">📖 Joel</li>
-            <li class="onBookClicked" data-bookName="amos">📖 Amos</li>
-            <li class="onBookClicked" data-bookName="obadiah">📖 Obadiah</li>
-            <li class="onBookClicked" data-bookName="jonah">📖 Jonah</li>
-            <li class="onBookClicked" data-bookName="micah">📖 Micah</li>
-            <li class="onBookClicked" data-bookName="nahum">📖 Nahum</li>
-            <li class="onBookClicked" data-bookName="habakkuk">📖 Habakkuk</li>
-            <li class="onBookClicked" data-bookName="zephaniah">📖 Zephaniah</li>
-            <li class="onBookClicked" data-bookName="haggai">📖 Haggai</li>
-            <li class="onBookClicked" data-bookName="zechariah">📖 Zechariah</li>
-            <li class="onBookClicked" data-bookName="malachi">📖 Malachi</li>
+            <li class="bookClicked" data-bookName="ezekiel">📖 Ezekiel</li>
+            <li class="bookClicked" data-bookName="daniel">📖 Daniel</li>
+            <li class="bookClicked" data-bookName="hosea">📖 Hosea</li>
+            <li class="bookClicked" data-bookName="joel">📖 Joel</li>
+            <li class="bookClicked" data-bookName="amos">📖 Amos</li>
+            <li class="bookClicked" data-bookName="obadiah">📖 Obadiah</li>
+            <li class="bookClicked" data-bookName="jonah">📖 Jonah</li>
+            <li class="bookClicked" data-bookName="micah">📖 Micah</li>
+            <li class="bookClicked" data-bookName="nahum">📖 Nahum</li>
+            <li class="bookClicked" data-bookName="habakkuk">📖 Habakkuk</li>
+            <li class="bookClicked" data-bookName="zephaniah">📖 Zephaniah</li>
+            <li class="bookClicked" data-bookName="haggai">📖 Haggai</li>
+            <li class="bookClicked" data-bookName="zechariah">📖 Zechariah</li>
+            <li class="bookClicked" data-bookName="malachi">📖 Malachi</li>
           </ul>
         </div>
       </div>
@@ -125,7 +125,14 @@ updatedBook.addEventListener("click", () => {
     </section>
   </section>
   `;
+  let bookclicked = document.querySelectorAll('.bookClicked')
+bookclicked.forEach((onBookClicked) => {
+  onBookClicked.addEventListener("click", (event) => {
+    updateBook(event.target.dataset.bookname);
+  });
 });
+});
+
 
 bookArray.forEach((onBookClicked) => {
   onBookClicked.addEventListener("click", (event) => {
@@ -147,11 +154,10 @@ function chaptersUpdate(bookname, chap) {
   let n = chap;
   for (i = 1; i <= n; i++) {
     book.innerHTML += `
-    <div class="div-js" id="chap-js" > ${i} </a></div>
+    <div class="div-js" id="chap-js"> ${i} </a></div>
     `;
     book.style.display = "grid";
-    book.classList.add("book-css");
-    let chapInnerDiv = document.getElementById("chap-js");
+    book.classList.add("book-css"); 
 
     var list = document.getElementsByClassName("div-js");
     for (var i = 0; i < list.length; i++) {
@@ -159,7 +165,7 @@ function chaptersUpdate(bookname, chap) {
     }
   }
 
-  chapters.addEventListener("click", (event) => {
+  chapters.addEventListener("click", () => {
     book.style.display = "none";
     book.innerHTML = "";
     let n = chap;
@@ -169,7 +175,6 @@ function chaptersUpdate(bookname, chap) {
       `;
       book.style.display = "grid";
       book.classList.add("book-css");
-      let chapInnerDiv = document.getElementById("chap-js");
 
       var list = document.getElementsByClassName("div-js");
       for (var i = 0; i < list.length; i++) {

@@ -125,14 +125,13 @@ updatedBook.addEventListener("click", () => {
     </section>
   </section>
   `;
-  let bookclicked = document.querySelectorAll('.bookClicked')
-bookclicked.forEach((onBookClicked) => {
-  onBookClicked.addEventListener("click", (event) => {
-    updateBook(event.target.dataset.bookname);
+  let bookclicked = document.querySelectorAll(".bookClicked");
+  bookclicked.forEach((onBookClicked) => {
+    onBookClicked.addEventListener("click", (event) => {
+      updateBook(event.target.dataset.bookname);
+    });
   });
 });
-});
-
 
 bookArray.forEach((onBookClicked) => {
   onBookClicked.addEventListener("click", (event) => {
@@ -152,12 +151,13 @@ function chaptersUpdate(bookname, chap) {
   book.style.display = "none";
   book.innerHTML = "";
   let n = chap;
+
   for (i = 1; i <= n; i++) {
     book.innerHTML += `
     <div class="div-js" id="chap-js"> ${i} </a></div>
     `;
     book.style.display = "grid";
-    book.classList.add("book-css"); 
+    book.classList.add("book-css");
 
     var list = document.getElementsByClassName("div-js");
     for (var i = 0; i < list.length; i++) {
@@ -168,6 +168,7 @@ function chaptersUpdate(bookname, chap) {
   chapters.addEventListener("click", () => {
     book.style.display = "none";
     book.innerHTML = "";
+
     let n = chap;
     for (i = 1; i <= n; i++) {
       book.innerHTML += `
@@ -184,6 +185,8 @@ function chaptersUpdate(bookname, chap) {
     let chapInnerDiv = document.querySelectorAll(".div-js");
     chapInnerDiv.forEach((ele) => {
       ele.addEventListener("click", (event) => {
+        book.style.display = "none";
+        book.innerHTML = `<div class="chapter-number">CHAPTER  ${event.currentTarget.innerText}</div>`;
         fetch(
           `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${event.currentTarget.innerText}.json`
         )
@@ -205,9 +208,7 @@ function chaptersUpdate(bookname, chap) {
               []
             );
 
-            book.style.display = "none";
-            book.innerHTML = "";
-
+            // book.innerHTML = "";
             for (r = 0; r < resultVerse.length; r++) {
               let finVerse = resultVerse[r].verse + ". " + resultVerse[r].text;
               (book.innerHTML += `
@@ -223,7 +224,6 @@ function chaptersUpdate(bookname, chap) {
   let chapInnerDiv = document.querySelectorAll(".div-js");
   chapInnerDiv.forEach((ele) => {
     ele.addEventListener("click", (event) => {
-     
       fetch(
         `https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookname}/chapters/${event.currentTarget.innerText}.json`
       )
@@ -243,7 +243,7 @@ function chaptersUpdate(bookname, chap) {
 
           book.style.display = "none";
           book.innerHTML = "";
-
+          book.innerHTML =`<div class="chapter-number">CHAPTER  ${verseArray[1].chapter}</div>`;
           for (r = 0; r < resultVerse.length; r++) {
             let finVerse = resultVerse[r].verse + ". " + resultVerse[r].text;
             (book.innerHTML += `

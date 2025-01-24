@@ -216,3 +216,7 @@ line-height: 25px;
   font-weight: bold;
 }
 
+.chapter-number{
+  text-align: center;
+  margin-bottom: 18px;
+}

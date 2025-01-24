@@ -3,78 +3,76 @@ body {
   padding: 0;
   background-color: rgb(107, 24, 24);
   scroll-behavior: smooth;
-  margin-bottom:60px;
+  margin-bottom: 60px;
 }
 
 /* Home-css */
 
-.home-header{
-text-align: center;
-padding:8px;
-background-color: #fcd4ae;
+.home-header {
+  text-align: center;
+  padding: 8px;
+  background-color: #fcd4ae;
 }
 
-.home-header-div{
-  font-size:24px;
-  font-weight:bold;
-  color:rgb(107, 24, 24);
-  font-style:italic
+.home-header-div {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(107, 24, 24);
+  font-style: italic;
 }
 
-.dailyVerse-sec{
-  display:flex;
+.dailyVerse-sec {
+  display: flex;
   flex-direction: column;
-  gap:20px;
+  /* gap: 20px; */
   justify-content: space-around;
   align-items: center;
-  margin:48px 56px;
-  background-color:#fed4ad;
-  padding:25px;
+  margin: 48px 56px;
+  background-color: #fed4ad;
+  padding: 25px;
   border: none;
   border-radius: 15px;
   height: 430px;
 }
 
-.dailyBread-div{
-  font-size:24px;
-  color: rgb(163, 41, 41);
-  text-align:center;
-  margin-top:8px;
-  padding-top:4px;
+.dailyBread-div {
+  font-size: 24px;
+  color: rgb(107, 24, 24);
+  text-align: center;
+  margin-top: 8px;
+  padding-top: 4px;
   font-weight: bold;
 }
 
 .verse-div,
-.dailyverse{
-  padding:10px;
+.dailyverse {
+  padding: 10px;
   text-align: center;
-  font-size:18px;
-  color:rgb(85, 13, 13);
-  font-weight:bold;
-  margin-left:8px;
-  margin-right:8px;
-  font-style:italic;
-  background-image: radial-gradient(  #fcd4ae,rgb(107, 24, 24));
-border: none;
-border-radius: 5px;
+  font-size: 18px;
+  color: rgb(85, 13, 13);
+  font-weight: bold;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-style: italic;
+  border-radius: 5px;
 }
 
-.test-buttons{
+.test-buttons {
   display: flex;
   justify-content: center;
-  gap:10px;
+  gap: 10px;
 }
 
 .testament-div {
-background-color: rgb(107, 24, 24);
-color:#fed4ad;
-border:2px solid rgb(107, 24, 24);
-border-radius:8px;
-padding:10px;
+  background-color: rgb(107, 24, 24);
+  color: #fed4ad;
+  border: 2px solid rgb(107, 24, 24);
+  border-radius: 8px;
+  padding: 10px;
 }
 
-.testament-div a{
-  color:#fed4ad;
+.testament-div a {
+  color: #fed4ad;
   text-decoration: none;
 }
 /* navBar-css */
@@ -123,68 +121,85 @@ padding:10px;
   font-weight: bold;
 }
 
-.bc-section{
+.bc-section {
   border-top: 3px solid rgb(172, 76, 76);
   border-bottom: 3px solid rgb(172, 76, 76);
-background-color: #fcd4ae;
+  background-color: #fcd4ae;
 }
 
-.bc-div{
+.bc-div {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-weight:bold;
+  font-weight: bold;
   text-align: center;
-  color:rgb(163, 41, 41);
+  color: rgb(163, 41, 41);
 }
 
 .book-head-section {
   margin-bottom: 24px;
 }
 
-.book-subSection{
+.book-subSection {
   margin-top: 100px;
-  margin-bottom:24px;
+  margin-bottom: 24px;
 }
 
-.testaments{
-  background-image: linear-gradient(to right, rgb(107, 24, 24) , #fcd4ae,rgb(107, 24, 24));
-  text-align:center;
-  color:rgb(107, 24, 24);
-  font-size:24px;
-  font-weight:bold;
-  margin-top:8px;
+.testaments {
+  background-image: linear-gradient(
+    to right,
+    rgb(107, 24, 24),
+    #fcd4ae,
+    rgb(107, 24, 24)
+  );
+  text-align: center;
+  color: rgb(107, 24, 24);
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
 }
 
 .bookName-div,
-.bookName-div2{
-height:auto;
-color:#ffdfc2;
-display: flex;
-justify-content: space-around;
-padding:4px;
+.bookName-div2 {
+  height: auto;
+  color: #ffdfc2;
+  display: flex;
+  justify-content: space-around;
+  padding: 4px;
 }
 
-.bookName-div2{
-margin-bottom: 60px;
+.bookName-div2 {
+  margin-bottom: 60px;
 }
 
 .old-books ul,
-.new-books ul{
-  padding:0;
+.new-books ul {
+  padding: 0;
 }
 
 .old-books li,
-.new-books li{
-list-style-type: none;
-border-bottom: 2px solid #fed4ad;
-line-height: 25px;
+.new-books li {
+  list-style-type: none;
+  border-bottom: 2px solid #fed4ad;
+  line-height: 25px;
+}
+
+.verse-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 50px;
+  background-image: radial-gradient(#fcd4ae, rgb(107, 24, 24));
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 24px;
+  padding-top: 65px;
 }
 /* --------------------------------- */
 
 .book-css {
   font-size: 18px;
-  color: #ffdfc2; 
+  color: #ffdfc2;
   margin-top: 100px;
   grid-template-columns: auto auto auto auto auto;
   gap: 12px;
@@ -217,13 +232,62 @@ line-height: 25px;
   font-weight: bold;
 }
 
-.chapter-number{
+.chapter-number {
   text-align: center;
   margin-bottom: 18px;
-  background-image: linear-gradient(to right, rgb(107, 24, 24) , #fcd4ae,rgb(107, 24, 24));
-  color:rgb(137, 34, 34)
+  background-image: linear-gradient(
+    to right,
+    rgb(107, 24, 24),
+    #fcd4ae,
+    rgb(107, 24, 24)
+  );
+  color: rgb(137, 34, 34);
 }
 
-/* @media (max-width: 600px) {
+@media (min-width: 1024px) {
+  .home-header-div {
+    font-size: 40px;
+  }
 
-} */
+  .verse-container {
+    margin-left:10px;
+    margin-right:10px;
+    padding: 20px;
+    padding-top: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .dailyVerse-sec {
+    padding: 0;
+    margin-top: 45px;
+    margin-right: 350px;
+    margin-left: 350px;
+    height: 500px;
+  }
+  .dailyBread-div {
+    font-size: 25px;
+  }
+  .verse-div {
+    font-size: 18px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: none;
+  }
+
+  .test-buttons {
+    gap: 20px;
+  }
+
+  .testament-div {
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .testament-div a {
+    font-size: 20px;
+  }
+}

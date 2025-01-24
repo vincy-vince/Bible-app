@@ -31,27 +31,27 @@ const meta = {
     chapters: 4,
     "en-kjv": "ruth",
   },
-  "1 samuel": {
+  "1samuel": {
     chapters: 31,
     "en-kjv": "1samuel",
   },
-  "2 samuel": {
+  "2samuel": {
     chapters: 24,
     "en-kjv": "2samuel",
   },
-  "1 kings": {
+  "1kings": {
     chapters: 22,
     "en-kjv": "1kings",
   },
-  "2 kings": {
+  "2kings": {
     chapters: 25,
     "en-kjv": "2kings",
   },
-  "1 chronicles": {
+  "1chronicles": {
     chapters: 29,
     "en-kjv": "1chronicles",
   },
-  "2 chronicles": {
+  "2chronicles": {
     chapters: 36,
     "en-kjv": "2chronicles",
   },
@@ -83,7 +83,7 @@ const meta = {
     chapters: 12,
     "en-kjv": "ecclesiastes",
   },
-  "song of solomon": {
+  "songofsolomon": {
     chapters: 8,
     "en-kjv": "songofsolomon",
   },
@@ -179,11 +179,11 @@ const meta = {
     chapters: 16,
     "en-kjv": "romans",
   },
-  "1 corinthians": {
+  "1corinthians": {
     chapters: 16,
     "en-kjv": "1corinthians",
   },
-  "2 corinthians": {
+  "2corinthians": {
     chapters: 13,
     "en-kjv": "2corinthians",
   },
@@ -203,19 +203,19 @@ const meta = {
     chapters: 4,
     "en-kjv": "colossians",
   },
-  "1 thessalonians": {
+  "1thessalonians": {
     chapters: 5,
     "en-kjv": "1thessalonians",
   },
-  "2 thessalonians": {
+  "2thessalonians": {
     chapters: 3,
     "en-kjv": "2thessalonians",
   },
-  "1 timothy": {
+  "1timothy": {
     chapters: 6,
     "en-kjv": "1timothy",
   },
-  "2 timothy": {
+  "2timothy": {
     chapters: 4,
     "en-kjv": "2timothy",
   },
@@ -235,23 +235,23 @@ const meta = {
     chapters: 5,
     "en-kjv": "james",
   },
-  "1 peter": {
+  "1peter": {
     chapters: 5,
     "en-kjv": "1peter",
   },
-  "2 peter": {
+  "2peter": {
     chapters: 5,
     "en-kjv": "2peter",
   },
-  "1 john": {
+  "1john": {
     chapters: 5,
     "en-kjv": "1john",
   },
-  "2 john": {
+  "2john": {
     chapters: 1,
     "en-kjv": "2john",
   },
-  "3 john": {
+  "3john": {
     chapters: 1,
     "en-kjv": "3john",
   },

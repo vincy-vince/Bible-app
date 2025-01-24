@@ -1,5 +1,9 @@
 let updatedBook = document.getElementById("selectedBook");
 let bookArray = document.querySelectorAll(".onBookClicked");
+let dailyBread = document.querySelector('.verse-div');
+
+// dailyBread.innerText = `<p class="dailyverse"> ${dailyBread.verse1.verse} <br> ${dailyBread.verse1.reference} </p>`
+
 
 updatedBook.addEventListener("click", () => {
   book.style.display = "none";
@@ -23,13 +27,13 @@ updatedBook.addEventListener("click", () => {
             <li class="bookClicked" data-bookName="joshua">📖 Joshua</li>
             <li class="bookClicked" data-bookName="judges">📖 Judges</li>
             <li class="bookClicked" data-bookName="ruth">📖 Ruth</li>
-            <li class="bookClicked" data-bookName="1 samuel">📖 1 Samuel</li>
-            <li class="bookClicked" data-bookName="2 samuel">📖 2 Samuel</li>
-            <li class="bookClicked" data-bookName="1 kings">📖 1 Kings</li>
-            <li class="bookClicked" data-bookName="2 kings">📖 2 Kings</li>
-            <li class="bookClicked" data-bookName="1 chronicles">📖 1
+            <li class="bookClicked" data-bookName="1samuel">📖 1 Samuel</li>
+            <li class="bookClicked" data-bookName="2samuel">📖 2 Samuel</li>
+            <li class="bookClicked" data-bookName="1kings">📖 1 Kings</li>
+            <li class="bookClicked" data-bookName="2kings">📖 2 Kings</li>
+            <li class="bookClicked" data-bookName="1chronicles">📖 1
               Chronicles</li>
-            <li class="bookClicked" data-bookName="2 chronicles">📖 2
+            <li class="bookClicked" data-bookName="2chronicles">📖 2
               Chronicles</li>
             <li class="bookClicked" data-bookName="ezra">📖 Ezra</li>
             <li class="bookClicked" data-bookName="nehemiah">📖 Nehemiah</li>
@@ -44,7 +48,7 @@ updatedBook.addEventListener("click", () => {
           <ul class="md:text-xl lg:text-xl">
             <li class="bookClicked" data-bookName="ecclesiastes">📖
               Ecclesiastes</li>
-            <li class="bookClicked" data-bookName="song of solomon">📖 Song of
+            <li class="bookClicked" data-bookName="songofsolomon">📖 Song of
               Solomon</li>
             <li class="bookClicked" data-bookName="isaiah">📖 Isaiah</li>
             <li class="bookClicked" data-bookName="jeremiah">📖 Jeremiah</li>
@@ -84,9 +88,9 @@ updatedBook.addEventListener("click", () => {
             <li class="bookClicked" data-bookName="john">📖 John</li>
             <li class="bookClicked" data-bookName="acts">📖 Acts</li>
             <li class="bookClicked" data-bookName="romans">📖 Romans</li>
-            <li class="bookClicked" data-bookName="1 corinthians">📖 1
+            <li class="bookClicked" data-bookName="1corinthians">📖 1
               Corinthians</li>
-            <li class="bookClicked" data-bookName="2 corinthians">📖 2
+            <li class="bookClicked" data-bookName="2corinthians">📖 2
               Corinthians</li>
             <li class="bookClicked" data-bookName="galatians">📖 Galatians</li>
             <li class="bookClicked" data-bookName="ephesians">📖 Ephesians</li>
@@ -94,9 +98,9 @@ updatedBook.addEventListener("click", () => {
             </li>
             <li class="bookClicked" data-bookName="colossians">📖 Colossians
             </li>
-            <li class="bookClicked" data-bookName="1 thessalonians">📖 1
+            <li class="bookClicked" data-bookName="1thessalonians">📖 1
               Thessalonians</li>
-            <li class="bookClicked" data-bookName="2 thessalonians">📖 2
+            <li class="bookClicked" data-bookName="2thessalonians">📖 2
               Thessalonians</li>
           </ul>
         </div>
@@ -104,17 +108,17 @@ updatedBook.addEventListener("click", () => {
         <div class="new-books">
           <ul class="md:text-xl lg:text-xl ">
             
-            <li class="bookClicked" data-bookName="1 timothy">📖 1 Timothy</li>
-            <li class="bookClicked" data-bookName="2 timothy">📖 2 Timothy</li>
+            <li class="bookClicked" data-bookName="1timothy">📖 1 Timothy</li>
+            <li class="bookClicked" data-bookName="2timothy">📖 2 Timothy</li>
             <li class="bookClicked" data-bookName="titus">📖 Titus</li>
             <li class="bookClicked" data-bookName="philemon">📖 Philemon</li>
             <li class="bookClicked" data-bookName="hebrews">📖 Hebrews</li>
             <li class="bookClicked" data-bookName="james">📖 James</li>
-            <li class="bookClicked" data-bookName="1 peter">📖 1 Peter</li>
-            <li class="bookClicked" data-bookName="2 peter">📖 2 Peter</li>
-            <li class="bookClicked" data-bookName="1 john">📖 1 John</li>
-            <li class="bookClicked" data-bookName="2 john">📖 2 John</li>
-            <li class="bookClicked" data-bookName="3 john">📖 3 John</li>
+            <li class="bookClicked" data-bookName="1peter">📖 1 Peter</li>
+            <li class="bookClicked" data-bookName="2peter">📖 2 Peter</li>
+            <li class="bookClicked" data-bookName="1john">📖 1 John</li>
+            <li class="bookClicked" data-bookName="2john">📖 2 John</li>
+            <li class="bookClicked" data-bookName="3john">📖 3 John</li>
             <li class="bookClicked" data-bookName="jude">📖 Jude</li>
             <li class="bookClicked" data-bookName="revelation">📖 Revelation
             </li>

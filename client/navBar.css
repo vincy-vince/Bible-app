@@ -44,7 +44,8 @@ background-color: #fcd4ae;
   font-weight: bold;
 }
 
-.verse-div{
+.verse-div,
+.dailyverse{
   padding:10px;
   text-align: center;
   font-size:18px;
